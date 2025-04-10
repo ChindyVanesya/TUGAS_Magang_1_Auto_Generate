@@ -1,0 +1,15 @@
+form{
+    margin: 50px;
+    justify-items: center;
+    text-align: center;
+    align-items: center;
+    
+}
+h2{
+    text-align: center;
+}
+.tahun{
+    /* padding: 0px 10px; */
+    width: 45px;
+    text-align: center;
+}
