@@ -1,15 +1,41 @@
-form{
-    margin: 50px;
+body {
+    background: #eae9e9;
+}
+h2 {
+    text-align: center;
+}
+.main {
     justify-items: center;
-    text-align: center;
-    align-items: center;
-    
 }
-h2{
+form {
+    background: #ffffff;
+    padding: 50px;
+    width: 50%;
+    border-radius: 10px;
+}
+input {
+    width: 100%;
+    padding: 11px 15px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+.kode {
+    display: flex;
+    gap: 10px;
+}
+.kode .tahun {
+    padding: 10px 4px;
+    margin-top: 27px;
+    width: 60px;
+    height: 40px;
     text-align: center;
 }
-.tahun{
-    /* padding: 0px 10px; */
-    width: 45px;
-    text-align: center;
+
+button {
+    padding: 10px 15px;
+    background: #28d44d;
+    border: 0px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
 }

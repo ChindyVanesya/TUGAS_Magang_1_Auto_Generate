@@ -8,13 +8,17 @@
 <body>
     <div class="no-print">
         <a href="/generate">Kembali</a> |
-        <button onclick="window.print()">Cetak</button>
+       
+            <a href="{{ url('/view/pdf') }}" target="_blank">📄 Cetak PDF</a>
+        </a>
+        
+
     </div>
 
     <div class="container">
         @foreach ($data as $item)
             <div class="card">
-                <div class="qr-code">{!! $item['qr'] !!}</div>
+                <img src="{{ $item['qr'] }}" class="qr-code">
                 <div class="kode">{{ $item['kode'] }}</div>
             </div>
         @endforeach

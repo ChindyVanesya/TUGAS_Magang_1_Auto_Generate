@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\generate;
 use App\Http\Controllers\KodeController;
+use App\Http\Controllers\QRCodeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,14 +16,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 Route::get('/hasil', function () {
     return view('qrcode');   
 });
 
+//     return view('qrcode');   
+// });
+Route::redirect('/', '/generate');
 
 Route::get('/generate',[KodeController::class, 'index' ]);
-// Route::get('/kode',[KodeController::class, 'index' ]);
+Route::get('/view/pdf',[KodeController::class, 'view_pdf' ]);
 Route::post('/generate',[KodeController::class, 'generate' ]);
